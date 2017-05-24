@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  $('.banner').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:true,
+    items:1,
+    autoplay:true
+  })
+});
