@@ -53,6 +53,7 @@ body{
         margin: 0;
         padding: 60px 0;
       }
+      
 
   }
   
@@ -232,7 +233,6 @@ body{
                 margin: 20px 0;
                 padding: 0;
                 width: 100%;
-                
                 line-height: 42px;
                 border-top: solid 1px $sub_color_beige;
                 border-bottom: solid 1px $sub_color_beige;
@@ -246,7 +246,7 @@ body{
                   background-color: $base_color;
                   border-bottom: solid 1px $sub_color_beige;
                   text-align: center;
-                  min-width: 100px;
+
                   
                   &:last-child{
                     border-right: none;
@@ -295,7 +295,11 @@ body{
             }
           }
           
-          
+          .table-2col{
+            th{
+              min-width:100px;
+            }
+          }
           
           .product-color-size{
               margin: 20px 0;
@@ -648,9 +652,41 @@ body{
           padding: 40px 0 20px 0;
           width: 100%;
         }
+        
         .pc-navi{
           display: none;
         }
+        .sp-navi-li{
+          display:none;
+    width: 100%;
+    position: absolute;
+    top: 160px;
+    right:2%;
+    border: 1px solid #eee;
+    background: white;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #ff6d77;
+    
+    z-index: 100; 
+
+    //スマホメニュー
+    li{
+      list-style: none;
+      margin: 0;
+      padding:0;
+      
+      a{
+        display:block;
+        padding: 10px 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+  }
         .sp-navi{
           width: 100%;
           display: block;
@@ -729,6 +765,8 @@ body{
         .title_pc{
           display: none;
         }
+        
+        
         .item-li{
           width: 100%;
           margin-right: 1%;
@@ -851,6 +889,9 @@ body{
       }
       .sp-navi{
         display: none;
+      }
+      .sp-navi-li{
+        display:none;
       }
   }
   body #contents #main #items{

@@ -49,8 +49,14 @@
         <ul class="sp-navi">
           <li><a href=""><img src="images/top_sp/fb.png" srcset="images/top_sp/fb@2x.png" alt="フェイスブック"/></a></li>
           <li><a href=""><img src="images/top_sp/insta.png" srcset="images/top_sp/insta@2x.png" alt="インスタグラム"/></a></li>
-          <li><a href=""><img src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png" alt="フェイスブック"/></a></li>
+          <li ><img id="sp_navi_btn" src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png" alt="フェイスブック"/></li>
         </ul>
+        <ul class="sp-navi-li">
+            <li><a href="">ログイン</a></li>
+            <li><a href="">カート</a></li>
+            <li><a href="">マイページ</a></li>
+            <li><a href="">ショッピングガイド</a></li>
+          </ul>
       </div>
   </header><!-- header -->
   
@@ -131,7 +137,7 @@
                 説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
                 説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ
               </p>
-              <table class="table">
+              <table class="table table-2col">
               <tr>
                 <th>カラー</th>
                 <td class="text">説明文が入ります説明文が入ります説明文が入ります説明文が入ります</td>
@@ -322,6 +328,18 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!-- Slide JS -->
   <script src="js/slide.js"></script>
+    <!-- Toggle -->
+  <script>
+  $(function(){
+    $(document).ready(function(){
+
+      $("#sp_navi_btn").click(function () {
+        $('.sp-navi-li').slideToggle();
+      });
+
+    });
+  });
+</script>
   
 </body>
 

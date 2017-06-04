@@ -46,11 +46,17 @@
           <li class="pc-navi-icon"><a href=""><img src="images/top/facebook.png" alt="フェイスブック"/></a></li>
           <li class="pc-navi-icon"><a href=""><img src="images/top/insta.png" alt="インスタグラム"/></a></li>
         </ul>
-        <ul class="sp-navi">
+                <ul class="sp-navi">
           <li><a href=""><img src="images/top_sp/fb.png" srcset="images/top_sp/fb@2x.png" alt="フェイスブック"/></a></li>
           <li><a href=""><img src="images/top_sp/insta.png" srcset="images/top_sp/insta@2x.png" alt="インスタグラム"/></a></li>
-          <li><a href=""><img src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png" alt="フェイスブック"/></a></li>
+          <li ><img id="sp_navi_btn" src="images/top_sp/menu_icon.png" srcset="images/top_sp/menu_icon@2x.png" alt="フェイスブック"/></li>
         </ul>
+        <ul class="sp-navi-li">
+            <li><a href="">ログイン</a></li>
+            <li><a href="">カート</a></li>
+            <li><a href="">マイページ</a></li>
+            <li><a href="">ショッピングガイド</a></li>
+          </ul>
       </div>
   </header><!-- header -->
   
@@ -310,7 +316,20 @@
   </footer><!-- //footer -->
   
   
-  
+    <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Toggle -->
+  <script>
+  $(function(){
+    $(document).ready(function(){
+
+      $("#sp_navi_btn").click(function () {
+        $('.sp-navi-li').slideToggle();
+      });
+
+    });
+  });
+</script>
   
   
 </body>
